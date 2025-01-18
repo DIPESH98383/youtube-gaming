@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Videos - Best Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #212121;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .search-bar {
+            width: 60%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .search-button {
+            padding: 12px 18px;
+            font-size: 16px;
+            background-color: #ff3f3f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .search-button:hover {
+            background-color: #e32e2e;
+        }
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .video-card {
+            background-color: white;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+        .video-thumbnail {
+            position: relative;
+        }
+        .video-thumbnail iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .play-button {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 12px;
+            border-radius: 50%;
+            font-size: 30px;
+            display: none;
+            cursor: pointer;
+        }
+        .video-thumbnail:hover .play-button {
+            display: block;
+        }
+        .video-title {
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .video-title:hover {
+            color: #ff3f3f;
+        }
+        .video-stats {
+            padding: 10px;
+            font-size: 14px;
+            color: #555;
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #ddd;
+        }
+        .video-stats span {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .video-stats span:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Trending Gaming Videos</h1>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for gaming videos...">
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="video-grid">
+            <!-- Video 1: I'm in Squid Game 2 -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/n9xXYUYNQg8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="play-button">▶</button>
+                </div>
+                <p class="video-title">I'm in Squid Game 2</p>
+                <div class="video-stats">
+                    <span><strong>Likes:</strong> 1.5k</span>
+                    <span><strong>Comments:</strong> 78</span>
+                    <span><strong>Views:</strong> 3.2M</span>
+                </div>
+            </div>
+
+            <!-- Video 2: Xbox Prime - Will The Next-Gen Xbox Crush PS5 Pro? -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/to08SyOOB4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="play-button">▶</button>
+                </div>
+                <p class="video-title">Xbox Prime: Will The Next-Gen Xbox Crush PS5 Pro?</p>
+                <div class="video-stats">
+                    <span><strong>Likes:</strong> 2.1k</span>
+                    <span><strong>Comments:</strong> 95</span>
+                    <span><strong>Views:</strong> 4.5M</span>
+                </div>
+            </div>
+
+            <!-- Video 3: Made Gaming Room inside a Train! -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/pQLFUUYIC0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="play-button">▶</button>
+                </div>
+                <p class="video-title">Made Gaming Room inside a Train!</p>
+                <div class="video-stats">
+                    <span><strong>Likes:</strong> 3k</span>
+                    <span><strong>Comments:</strong> 120</span>
+                    <span><strong>Views:</strong> 5M</span>
+                </div>
+            </div>
+
+            <!-- Video 4: India v Australia - Playing Realistic Test Game | SlayyPop -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/pHMf80rZNmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="play-button">▶</button>
+                </div>
+                <p class="video-title">India v Australia - Playing Realistic Test Game | SlayyPop</p>
+                <div class="video-stats">
+                    <span><strong>Likes:</strong> 1.8k</span>
+                    <span><strong>Comments:</strong> 60</span>
+                    <span><strong>Views:</strong> 2.5M</span>
+                </div>
+            </div>
+
+            <!-- Video 5: Top 10 *BIGGEST* OPEN WORLD Games Ever Made -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/F8BactAXOH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="play-button">▶</button>
+                </div>
+                <p class="video-title">Top 10 *BIGGEST* OPEN WORLD Games Ever Made 😍</p>
+                <div class="video-stats">
+                    <span><strong>Likes:</strong> 5.5k</span>
+                    <span><strong>Comments:</strong> 250</span>
+                    <span><strong>Views:</strong> 7M</span>
+                </div>
+            </div>
+
+            <!-- Video 6: I Stole Infinity Castle And Put It Into My Multiplayer Game! -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/VCXecPa0bbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="play-button">▶</button>
+                </div>
+                <p class="video-title">I Stole Infinity Castle And Put It Into My Multiplayer Game!</p>
+                <div class="video-stats">
+                    <span><strong>Likes:</strong> 2.2k</span>
+                    <span><strong>Comments:</strong> 90</span>
+                    <span><strong>Views:</strong> 4.8M</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Trending Videos from Channels</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <header class="header">
+        <h1>Latest Videos from SandMan, SlashingWolf, and BeastBoyShub</h1>
+      </header>
+    
+      <main class="content">
+        <div class="video-grid">
+          <!-- Video cards will be dynamically generated here -->
+        </div>
+      </main>
+    
+      <main>
+        <div class="video-container">
+            <!-- Video 1 -->
+            <div class="video">
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/gQzGspx5aYc" 
+                        title="2520mg of Edibles vs ELDEN RING" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                <h3>2520mg of Edibles vs ELDEN RING</h3>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video">
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/live_stream?channel=8YOrYUFoacM" 
+                        title="Nintendo Switch 2 Officially Revealed! My Live Reaction!" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                <h3>Nintendo Switch 2 Officially Revealed! My Live Reaction!</h3>
+      <script src="script.js"></script>
+    </body>
+    </html>
+    
+    <script src="script.js"></script>
+</body>
+</html>
